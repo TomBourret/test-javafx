@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+
+<MenuBar xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1"
+        fx:controller="fr.insalyon.teamparrot.testjavafx.controller.MenuController">
+
+    <Menu mnemonicParsing="false" text="File">
+        <MenuItem mnemonicParsing="false" text="Exit" onAction="#exitButtonAction"/>
+    </Menu>
+
+    <Menu mnemonicParsing="false" text="Edit">
+        <MenuItem mnemonicParsing="false" text="Undo" onAction="#undo"/>
+        <MenuItem mnemonicParsing="false" text="Redo" onAction="#redo"/>
+    </Menu>
+
+    <Menu mnemonicParsing="false" text="Help">
+        <MenuItem mnemonicParsing="false" text="Yolo"/>
+    </Menu>
+</MenuBar>

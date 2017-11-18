@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1"
+         fx:controller="fr.insalyon.teamparrot.testjavafx.controller.CenterPaneController">
+
+    <Button fx:id="add1Btn" onAction="#add1" layoutX="233.0" layoutY="172.0" mnemonicParsing="false" text="add 1"/>
+    <Button fx:id="add2Btn" onAction="#add2" layoutX="108.0" layoutY="172.0" mnemonicParsing="false" text="add 2"/>
+    <Label fx:id="resultLabel" layoutX="157.0" layoutY="249.0" text="Label"/>
+    <Button fx:id="undoBtn" layoutX="193.0" layoutY="46.0" mnemonicParsing="false" text="undo" onAction="#undo"/>
+    <Button fx:id="redoBtn" layoutX="306.0" layoutY="46.0" mnemonicParsing="false" text="redo" onAction="#redo"/>
+
+</AnchorPane>
