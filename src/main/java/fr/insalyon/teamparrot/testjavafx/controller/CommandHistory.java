@@ -2,10 +2,10 @@ package fr.insalyon.teamparrot.testjavafx.controller;
 
 import java.util.ArrayList;
 
-public class CommandHistory {
+class CommandHistory {
 
     private static CommandHistory instance = null;
-    static public CommandHistory getInstance() {
+    static CommandHistory getInstance() {
         if (null == instance) {
             instance = new CommandHistory();
         }
@@ -20,13 +20,13 @@ public class CommandHistory {
         this.futureCommands = new ArrayList<>();
     }
 
-    public void execute(Command command) {
+    void execute(Command command) {
         history.add(command);
         futureCommands.clear();
         command.execute();
     }
 
-    public void undo() {
+    void undo() {
         if (history.isEmpty()) return;
 
         Command c = history.get(history.size() - 1);
@@ -37,7 +37,7 @@ public class CommandHistory {
         c.rollback();
     }
 
-    public void redo() {
+    void redo() {
         if (futureCommands.isEmpty()) return;
 
         Command c = futureCommands.get(futureCommands.size() - 1);
